@@ -1231,7 +1231,12 @@ def ventana_familia():
 
 
                 else:
-                    mensaje_familia = "Parámetros no definidos o caso no soportado." 
+                    mensaje_familia = ("Parámetros no definidos o caso no soportado.\n"
+                                "   \n"
+                                "combinacion:\n"
+                                f"genero == {genero}\n"
+                                f"sri == {sri}\n"
+                                f"estado_de_trabajo == {estado_de_trabajo}") 
                 mensaje_text_familia.insert(tk.END, mensaje_familia)
             except ValueError:
                 messagebox.showerror("Error", "Ingrese los datos correctamente.")
